@@ -17,7 +17,7 @@ export default function MarketingPageIntegration() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline enableColorScheme />
-      <p>hej</p>
+
       <AppAppBar />
       <Hero />
       <div>
