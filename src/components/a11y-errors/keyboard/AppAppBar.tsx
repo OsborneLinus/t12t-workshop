@@ -51,23 +51,25 @@ export default function AppAppBar() {
           >
             <Sitemark />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Button variant="text" color="info" size="small" tabIndex={2}>
+              <Button variant="text" color="info" size="small" tabIndex={1}>
                 Features
               </Button>
-              <Button variant="text" color="info" size="small" tabIndex={5}>
+              <Button variant="text" color="info" size="small" tabIndex={2}>
                 Testimonials
               </Button>
-              <Button variant="text" color="info" size="small" tabIndex={4}>
+              <Button variant="text" color="info" size="small" tabIndex={3}>
                 Highlights
               </Button>
-              <Button variant="text" color="info" size="small" tabIndex={10}>
+              <Button variant="text" color="info" size="small" tabIndex={4}>
                 Pricing
               </Button>
+
               <Button
                 variant="text"
                 color="info"
                 size="small"
                 sx={{ minWidth: 0 }}
+                tabIndex={5}
               >
                 FAQ
               </Button>
@@ -76,6 +78,7 @@ export default function AppAppBar() {
                 color="info"
                 size="small"
                 sx={{ minWidth: 0 }}
+                tabIndex={6}
               >
                 Blog
               </Button>
@@ -113,12 +116,49 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem>
+                  <Button variant="text" color="info" size="small" tabIndex={1}>
+                    Features
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button variant="text" color="info" size="small" tabIndex={2}>
+                    Testimonials
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  {" "}
+                  <Button variant="text" color="info" size="small" tabIndex={3}>
+                    Highlights
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button variant="text" color="info" size="small" tabIndex={4}>
+                    Pricing
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button
+                    variant="text"
+                    color="info"
+                    size="small"
+                    sx={{ minWidth: 0 }}
+                    tabIndex={5}
+                  >
+                    FAQ
+                  </Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button
+                    variant="text"
+                    color="info"
+                    size="small"
+                    sx={{ minWidth: 0 }}
+                    tabIndex={6}
+                  >
+                    Blog
+                  </Button>
+                </MenuItem>
                 <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>
                     Sign up
