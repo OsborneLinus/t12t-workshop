@@ -175,7 +175,7 @@ export default function Pricing() {
                       gap: 1.5,
                       alignItems: "center",
                     }}
-                    role="buttons"
+                    role="button"
                   >
                     <CheckCircleRoundedIcon
                       sx={[
